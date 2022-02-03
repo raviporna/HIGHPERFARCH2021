@@ -41,7 +41,6 @@ void add_avx(int size, int *a, int *b)
 
 int main(int argc, const char *argv[])
 {
-
   int SIZE = 70000;
   int n = 20000;
   if (argc == 3)
@@ -82,7 +81,7 @@ int main(int argc, const char *argv[])
   time_taken = ((double)t) * 1000000 / CLOCKS_PER_SEC / n; // in seconds
   printf("add_avx() took %f us to execute \n", time_taken);
 
-  // speed
+  // speedup
   double speedup = (t1 + 0.0) / (t2 + 0.0);
   printf("speedup = %f", speedup);
 }

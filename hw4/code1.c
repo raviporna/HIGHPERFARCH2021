@@ -4,8 +4,7 @@
 #include <time.h>
 #include <omp.h>
 
-/* N for sample size, NUM for data size 
- * NUM_THREADS for number of logical processors */
+/* N for sample size, NUM for data size */
 #define N 10000
 #define NUM 500000
 
